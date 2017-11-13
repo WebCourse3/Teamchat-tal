@@ -1,11 +1,11 @@
 <div class="ditails ">
-  <label><b>Username</b></label>
+  <label><b>WEB IS THE BEST@!!@!!! ASSAF HAYA PO!</b></label>
   <br>
-  <input type="text" placeholder="Enter Username" name="uname" required><br>
+  <input [(ngModel)]="newUser.name" type="text" placeholder="Enter Username" name="uname" required><br>
   <br>
   <label><b>Password</b></label> <br>
-  <input type="password" placeholder="Enter Password" name="psw" required><br>
+  <input [(ngModel)]="newUser.password" type="password" placeholder="Enter Password" name="psw" required><br>
   <br>
-  <button type="submit" id="login-botton">Login</button>
+  <button (click)="submit()" type="submit" id="login-botton">Login</button>
   <br>
 </div>
