@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/WebCourse3/Teamchat-tal#readme",
   "dependencies": {
+    "@angular/core": "^5.0.1",
     "express": "^4.16.2"
   },
   "devDependencies": {

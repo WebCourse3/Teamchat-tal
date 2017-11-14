@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {User} from '../user/userDitails';
+import { userService } from '../sharedService/userService';
 
 @Component({
   selector: 'app-log',
@@ -8,7 +9,6 @@ import {User} from '../user/userDitails';
   encapsulation: ViewEncapsulation.None
 })
 export class LogComponent implements OnInit {
-
 newUser: User;
 
   constructor() { }
@@ -16,8 +16,8 @@ newUser: User;
   ngOnInit() {
   }
 
-  submit(){//שם אחר לסרוויס
-    service.login(this.newUser);
+  submit(){
+   userService.login(this.newUser);
   }
 
 }
